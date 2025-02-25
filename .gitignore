@@ -2,7 +2,7 @@ few_images/
 myenv/
 runs/
 weights/
-bus.jpg/
+bus.jpg
 check.txt/
 Joey_Training.code-workspace/
 notes.txt
