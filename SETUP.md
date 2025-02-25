@@ -15,6 +15,16 @@ nvidia-smi
 nvcc --version
 ```
 If either of these commands does not function in the CLI, then you may need to troubleshoot your CUDA drivers.
+
+## create a venv (linux)
+```bash
+python3 -m venv myenv
+```
+Enter myenv:
+```bash
+source myenv/bin/activate
+```
+
 ## install Ultralytics and necessary libraries
 Option 1, use requirements.txt:
 ```bash
@@ -36,7 +46,9 @@ python3 test_cuda_install.py
 ## test model on sample image
 The [inference_test.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/inference_test.py) script will run inference on the image below.
 
-![Example Image Containing Narrowleaf cattail:](narrowleaf_cattail-6-19-24-4746.JPG)
+<img src="narrowleaf_cattail-6-19-24-4746.JPG" alt="Description" width="500">
+```![Example Image Containing Narrowleaf cattail:](narrowleaf_cattail-6-19-24-4746.JPG)
+```
 
 Run in CLI:
 ```bash
