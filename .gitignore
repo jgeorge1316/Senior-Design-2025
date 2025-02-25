@@ -4,9 +4,10 @@ runs/
 weights/
 bus.jpg
 check.txt/
-Joey_Training.code-workspace/
+Joey_Training.code-workspace
 notes.txt
 sanity_test.py
 val_test.py
 yolo11n-cls.pt
 yolo11n.pt
+env1/
