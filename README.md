@@ -2,7 +2,8 @@
 ## Classifying Invasive Species Using Drone Images and Deep Learning
 These are the scripts that Joey George used in training and interaction with YOLO models via Ultralytics.
 
-Current best model weights:
-[single_model0.1.1.pt]() UPDATE LINK
+### setup steps [here](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/SETUP.md)
 
-### setup steps [here]() UPDATE LINK
+Current best model weights:
+[single_model0.1.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.1.1.pt)
+
