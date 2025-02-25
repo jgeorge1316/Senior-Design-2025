@@ -1,0 +1,13 @@
+few_images/
+myenv/
+runs/
+weights/
+bus.jpg/
+check.txt/
+Joey_Training.code-workspace/
+notes.txt
+sanity_test.py
+single_model0.1.1.pt
+val_test.py
+yolo11n-cls.pt
+yolo11n.pt
