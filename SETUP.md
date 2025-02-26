@@ -7,14 +7,11 @@ cd Senior-Design-2025
 ```
 
 ## install CUDA drivers
-CUDA needs to be installed [here](https://developer.nvidia.com/cuda-downloads). You can check the installation of CUDA by running the two following commands:
+CUDA needs to be installed [here](https://developer.nvidia.com/cuda-downloads). You can check the installation of CUDA by running the following command:
 ```bash
 nvidia-smi
 ```
-```
-nvcc --version
-```
-If either of these commands does not function in the CLI, then you may need to troubleshoot your CUDA drivers.
+If this command does not function in the CLI, then you may need to troubleshoot your CUDA drivers.
 
 ## create a venv (linux)
 ```bash
@@ -46,9 +43,8 @@ python3 test_cuda_install.py
 ## test model on sample image
 The [inference_test.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/inference_test.py) script will run inference on the image below.
 
-<img src="narrowleaf_cattail-6-19-24-4746.JPG" alt="Description" width="500">
-```![Example Image Containing Narrowleaf cattail:](narrowleaf_cattail-6-19-24-4746.JPG)
-```
+<img src="narrowleaf_cattail-6-19-24-4746.JPG" alt="Narrowleaf cattail image" width="500">
+
 
 Run in CLI:
 ```bash
@@ -62,4 +58,4 @@ image 1/1 /home/landon/Senior-Design/Joey_Training/narrowleaf_cattail-6-19-24-47
 Speed: 82.9ms preprocess, 3.2ms inference, 0.0ms postprocess per image at shape (1, 3, 640, 640)
 ```
 Output Image should look like this:
-![Example Output](narrowleaf_cattail-6-19-24-4746_results.jpg)
+<img src="narrowleaf_cattail-6-19-24-4746_results.jpg" alt="Narrowleaf cattail image with inference results" width="500">
