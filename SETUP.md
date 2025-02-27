@@ -58,4 +58,5 @@ image 1/1 /home/landon/Senior-Design/Joey_Training/narrowleaf_cattail-6-19-24-47
 Speed: 82.9ms preprocess, 3.2ms inference, 0.0ms postprocess per image at shape (1, 3, 640, 640)
 ```
 Output Image should look like this:
+
 <img src="narrowleaf_cattail-6-19-24-4746_results.jpg" alt="Narrowleaf cattail image with inference results" width="500">
