@@ -3,7 +3,7 @@ import time
 
 if __name__ == "__main__":
     # Load the model
-    model = YOLO("/home/landon/Desktop/FilesForRyan/singleModel_0.0.1.pt")  # Load a pretrained model
+    model = YOLO("models/single_model0.1.1.pt")  # Load a pretrained model
     start_time=time.perf_counter()
     results = model.predict("/home/landon/Senior-Design/small_dataset/test/narrowleaf_cattail", stream=1) #you can set this to a specific image, or to a folder of images
     #print(results) #prints the ultralytics engine results structure. For classification, you only need to focus on result.names, and result.probs
@@ -21,6 +21,8 @@ if __name__ == "__main__":
         print(result.probs.top1) #result.probs.top1 returns the index of the class with the highest probability
 
         print(result.names[result.probs.top1]) #using top1, and the class names array, print the class with the highest probability
+
+        print(result.speed) #prints speed object
 
     #you need the end time counter to be AFTER at least the first time that you access the results, if the stream=1 in model.predict.
     #stream=1 changes the way that the predict function behaves, and makes it use way less memory, but it also makes the python interpreter start moving to the next line of code
