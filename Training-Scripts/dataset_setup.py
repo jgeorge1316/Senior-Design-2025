@@ -4,7 +4,7 @@ import random
 
 # Define paths
 source_dir = r"/home/landon/Senior-Design/Training"
-target_dir = r"/home/landon/Senior-Design/dataset3"
+target_dir = r"/home/landon/Senior-Design/dataset4"
 
 # Define classes
 classes = ["narrowleaf_cattail", "none", "phragmites", "purple_loosestrife"]
@@ -22,6 +22,7 @@ for class_name in classes:
     
     # Randomly sample up to 1500 images
     selected_images = random.sample(images, min(1500, len(images)))
+    remaining_images = list(set(images) - set(selected_images))  # Get unselected images
     
     # Distribute images across train, val, test
     split_counts = {k: int(v * len(selected_images) / 100) for k, v in splits.items()}
@@ -33,3 +34,15 @@ for class_name in classes:
             img_name = f"{start_idx}_{class_name}.jpg"
             shutil.copy(os.path.join(source_path, selected_images[start_idx]), os.path.join(split_path, img_name))
             start_idx += 1
+    
+    # Add remaining selected images to test set
+    test_path = os.path.join(target_dir, "test", class_name)
+    for i in range(start_idx, len(selected_images)):
+        img_name = f"{i}_{class_name}.jpg"
+        shutil.copy(os.path.join(source_path, selected_images[i]), os.path.join(test_path, img_name))
+    
+    # Add all unselected images to the test set
+    print(f"Adding {len(remaining_images)} additional images to test set for class {class_name}")
+    for img in remaining_images:
+        img_name = f"extra_{img}"  # Keep original filename but prefix with 'extra_'
+        shutil.copy(os.path.join(source_path, img), os.path.join(test_path, img_name))
