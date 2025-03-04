@@ -3,7 +3,7 @@ import time
 
 if __name__ == "__main__":
     # Load the model
-    model = YOLO("models/single_model0.1.1.pt")  # Load a pretrained model
+    model = YOLO("./models/single_model0.1.1.pt")  # Load a pretrained model
     start_time=time.perf_counter()
     results = model.predict("/home/landon/Senior-Design/small_dataset/test/narrowleaf_cattail", stream=1) #you can set this to a specific image, or to a folder of images
     #print(results) #prints the ultralytics engine results structure. For classification, you only need to focus on result.names, and result.probs

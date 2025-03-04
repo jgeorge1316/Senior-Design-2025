@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 # Load the model once outside of the multiprocessing context
 def load_model():
-    return YOLO("models/single_model0.1.1.pt")
+    return YOLO("./models/single_model0.1.1.pt")
 
 # Function to process a single image with the model
 def process_image(image_path):

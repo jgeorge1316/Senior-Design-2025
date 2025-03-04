@@ -4,7 +4,7 @@ import random
 
 # Define paths
 source_dir = r"/home/landon/Senior-Design/Training"
-target_dir = r"/home/landon/Senior-Design/dataset2"
+target_dir = r"/home/landon/Senior-Design/dataset3"
 
 # Define classes
 classes = ["narrowleaf_cattail", "none", "phragmites", "purple_loosestrife"]

@@ -5,7 +5,7 @@ if __name__ == "__main__":
     # Load a model
     #model = YOLO("weights/best.pt")  # Load the model
     #model = YOLO("runs/classify/train2/weights/last.pt")
-    model = YOLO("single_model0.1.1.pt")
+    model = YOLO("./models/single_model0.1.1.pt")
     start_time=time.perf_counter()
     results1 = model.predict("/home/landon/Senior-Design/Training/none", stream=1)
 
