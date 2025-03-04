@@ -4,7 +4,7 @@ import random
 
 # Define paths
 source_dir = r"/home/landon/Senior-Design/Training"
-target_dir = r"/home/landon/Senior-Design/dataset4"
+target_dir = r"/home/landon/Senior-Design/dataset6"
 
 # Define classes
 classes = ["narrowleaf_cattail", "none", "phragmites", "purple_loosestrife"]
@@ -34,8 +34,17 @@ for class_name in classes:
             img_name = f"{start_idx}_{class_name}.jpg"
             shutil.copy(os.path.join(source_path, selected_images[start_idx]), os.path.join(split_path, img_name))
             start_idx += 1
+
+    input("Press Enter to continue...")
+
+    print(f"Adding {len(remaining_images)} additional images to test set for class {class_name}")
+    test_path = os.path.join(target_dir, "test", class_name)
+    #gpt is dumb so making my own thing
+    for i in range(len(remaining_images)):
+        img_name = f"extra_{remaining_images[i]}.jpg"
+        shutil.copy(os.path.join(source_path, remaining_images[i]), os.path.join(test_path, img_name))
     
-    # Add remaining selected images to test set
+    '''# Add remaining selected images to test set
     test_path = os.path.join(target_dir, "test", class_name)
     for i in range(start_idx, len(selected_images)):
         img_name = f"{i}_{class_name}.jpg"
@@ -46,3 +55,5 @@ for class_name in classes:
     for img in remaining_images:
         img_name = f"extra_{img}"  # Keep original filename but prefix with 'extra_'
         shutil.copy(os.path.join(source_path, img), os.path.join(test_path, img_name))
+    '''
+    
