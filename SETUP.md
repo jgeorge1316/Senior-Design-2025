@@ -41,14 +41,14 @@ python3 test_cuda_install.py
 ```
 
 ## test model on sample image
-The [inference_test.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/inference_test.py) script will run inference on the image below.
+The [inference_test.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/Test-Scripts/inference_test.py) script will run inference on the image below.
 
 <img src="narrowleaf_cattail-6-19-24-4746.JPG" alt="Narrowleaf cattail image" width="500">
 
 
 Run in CLI:
 ```bash
-python3 inference_test.py
+python3 Test-Scripts/inference_test.py
 ```
 Example console Output:
 ```bash
