@@ -35,8 +35,6 @@ for class_name in classes:
             shutil.copy(os.path.join(source_path, selected_images[start_idx]), os.path.join(split_path, img_name))
             start_idx += 1
 
-    input("Press Enter to continue...")
-
     print(f"Adding {len(remaining_images)} additional images to test set for class {class_name}")
     test_path = os.path.join(target_dir, "test", class_name)
     #gpt is dumb so making my own thing
