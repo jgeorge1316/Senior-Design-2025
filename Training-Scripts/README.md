@@ -1,5 +1,5 @@
 # Scripts used for training the model
-Please note that the custom dataset is not publicly available.
+Please note that the custom dataset is not publicly available. Please note that with these files, there may be filepath locations that are **NOT** a part of the github repo, so some scripts may not work. These are not publicly available files.
 
 ## [smallDataset.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/Training-Scripts/smallDataset.py)
 Initial script used to setup a small dataset for training. This script sets up the structure for training the model. It takes in a folder which contains the folders with all of the images for each class. It then takes 100 images from each class, and splits them into train, val, and test (70%, 15%, 15% respectively). The script was made with help from ChatGPT [citation](https://chatgpt.com/share/67c75da4-b03c-800b-a3d8-bdb66cd86d36). The structure of the dataset for training is detailed [here](https://docs.ultralytics.com/datasets/classify/) in the Ultralytics docs.
