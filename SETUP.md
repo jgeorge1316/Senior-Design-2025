@@ -52,7 +52,7 @@ python3 Test-Scripts/inference_test.py
 ```
 Example console Output:
 ```bash
-$ python3 inference_test.py 
+$ python3 Test-Scripts/inference_test.py 
 
 image 1/1 /home/landon/Senior-Design/Joey_Training/narrowleaf_cattail-6-19-24-4746.JPG: 640x640 narrowleaf_cattail 0.92, phragmites 0.06, purple_loosestrife 0.02, none 0.00, 3.2ms
 Speed: 82.9ms preprocess, 3.2ms inference, 0.0ms postprocess per image at shape (1, 3, 640, 640)
