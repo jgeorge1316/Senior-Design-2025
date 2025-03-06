@@ -1,5 +1,5 @@
 # Models
-These were the models generated using my scripts.
+These were the models generated using my scripts. Mainly the [test_model_threaded.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/Test-Scripts/test_model_threaded.py)
 
 | model | Accuracy  |
 | --- | --- |
