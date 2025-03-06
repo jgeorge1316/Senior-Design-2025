@@ -5,4 +5,4 @@ if __name__ == "__main__":
     model = YOLO("./yolo11n-cls.pt")  # load a pretrained model (recommended for training)
 
     # Train the model
-    results = model.train(data="../dataset3", epochs=10, imgsz=640)
+    results = model.train(data="../dataset6", epochs=10, imgsz=640, batch=64)
