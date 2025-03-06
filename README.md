@@ -5,7 +5,7 @@ These are the scripts that Joey George used in training and interaction with YOL
 ### setup steps [here](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/SETUP.md)
 
 Current best model weights:
-[single_model0.1.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.1.1.pt)
+[single_model0.3.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.3.1.pt)
 
 # TODO
 - add more detail to models/README.md
