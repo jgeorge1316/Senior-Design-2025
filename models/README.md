@@ -9,7 +9,7 @@ These were the models generated using my scripts. Mainly the [test_model_threade
 ## [single_model0.1.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.1.1.pt)
 Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~220 for none. Took ~13 minutes to train on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
 
-| | narrowleaf cattail | none | phragmites | purple loosestrife |
+| 0.1.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
 | --- | --- | ---| --- | --- |
 | % Accuracy | 98.94 | 100 | 97.59 | 99.87 |
 | Total Count | 5947 | 223 | 9063 | 1504 |
@@ -19,7 +19,7 @@ Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8
 ## [single_model0.2.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.2.1.pt)
 Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~1300 for none. Took ~17 minutes to train on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
 
-| | narrowleaf cattail | none | phragmites | purple loosestrife |
+| 0.2.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
 | --- | --- | ---| --- | --- |
 | % Accuracy | 98.44 | 100 | 97.76 | 99.93 |
 | Total Count | 6104 | 1334 | 9063 | 1504 |
@@ -29,7 +29,7 @@ Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8
 ## [single_model0.3.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.3.1.pt)
 Trained using 1500 for each target species, and ~1300 for none. Took ~19 minutes to train on the Lambda AI Workstation (other tasks were being done in parallel during training). Accuracy results are on all images for each class that were **NOT** used in training. That means that these results are much more relevant and not skewed by the training and validation images.
 
-| | narrowleaf cattail | none | phragmites | purple loosestrife |
+| 0.3.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
 | --- | --- | ---| --- | --- |
 | % Accuracy | 99.40 | 100 | 97.46 | 100 |
 | Total Count | 4829 | 200 | 7788 | 229 |
