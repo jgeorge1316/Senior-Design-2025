@@ -11,4 +11,3 @@ val_test.py
 yolo11n-cls.pt
 yolo11n.pt
 env1/
-Training-Scripts/train100.py
