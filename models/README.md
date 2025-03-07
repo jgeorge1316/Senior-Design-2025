@@ -7,7 +7,7 @@ These were the models generated using my scripts. Mainly the [test_model_threade
 **UPDATE THIS TABLE**
 
 ## [single_model0.1.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.1.1.pt)
-Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~220 for none. Took ~13 minutes to train on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
+Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~220 for none. Took ~13 minutes to train 10 epochs on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
 
 | 0.1.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
 | --- | --- | ---| --- | --- |
@@ -17,7 +17,7 @@ Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8
 | Wrong Count | 63 | 0 | 218 | 2 |
 
 ## [single_model0.2.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.2.1.pt)
-Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~1300 for none. Took ~17 minutes to train on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
+Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~1300 for none. Took ~17 minutes to train 10 epochs on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
 
 | 0.2.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
 | --- | --- | ---| --- | --- |
@@ -27,7 +27,7 @@ Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8
 | Wrong Count | 95 | 0 | 203 | 1 |
 
 ## [single_model0.3.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.3.1.pt)
-Trained using 1500 for each target species, and ~1300 for none. Took ~19 minutes to train on the Lambda AI Workstation (other tasks were being done in parallel during training). Accuracy results are on all images for each class that were **NOT** used in training. That means that these results are much more relevant and not skewed by the training and validation images.
+Trained using 1500 for each target species, and ~1300 for none. Took ~19 minutes to train 10 epochs on the Lambda AI Workstation (other tasks were being done in parallel during training). Accuracy results are on all images for each class that were **NOT** used in training. That means that these results are much more relevant and not skewed by the training and validation images.
 
 | 0.3.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
 | --- | --- | ---| --- | --- |
@@ -35,6 +35,15 @@ Trained using 1500 for each target species, and ~1300 for none. Took ~19 minutes
 | Total Count | 4829 | 200 | 7788 | 229 |
 | Correct Count | 4800 | 200 | 7590 | 229 |
 | Wrong Count | 29 | 0 | 198 | 0 |
+
+## [single_model0.4.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.4.1.pt)
+Trained using 1500 for each target species, and ~1300 for none. Took 1 hour & 24 minutes to train 50 epochs on the Lambda AI Workstation (other tasks were being done in parallel during training). Accuracy results are on all images for each class that were **NOT** used in training. That means that these results are much more relevant and not skewed by the training and validation images.
+| 0.4.1 | narrowleaf cattail | none | phragmites | purple loosestrife |
+| --- | --- | ---| --- | --- |
+| % Accuracy | 98.67 | 100 | 97.61 | 100 |
+| Total Count | 4829 | 200 | 7788 | 229 |
+| Correct Count | 4765 | 200 | 7602 | 229 |
+| Wrong Count | 64 | 0 | 186 | 0 |
 
 Citation for YOLO11 model
 ```
