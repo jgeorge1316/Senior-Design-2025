@@ -4,8 +4,9 @@ import time
 import multiprocessing
 import torch
 from tqdm import tqdm
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
+from torchmetrics.classification import MulticlassConfusionMatrix
+import torch.nn.functional as F
 
 # Load model once globally
 model = YOLO("./models/single_model0.4.1.pt")
@@ -56,10 +57,30 @@ if __name__ == "__main__":
     print(f"Total process time: {end_time - start_time:.2f} seconds")
     print(f"Accuracy: {accuracy:.4f} ({correct}/{total})")
 
-    # Confusion matrix
-    cm = confusion_matrix(y_true, y_pred)
-    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
-    disp.plot(cmap='Blues', xticks_rotation=45)
+    # Generate and plot confusion matrix using torchmetrics
+    y_true_tensor = torch.tensor(y_true)
+    y_pred_tensor = torch.tensor(y_pred)
+
+    cm = MulticlassConfusionMatrix(num_classes=len(class_names))
+    confusion_matrix = cm(y_pred_tensor, y_true_tensor)
+
+    fig, ax = plt.subplots(figsize=(8, 6))
+    im = ax.imshow(confusion_matrix.numpy(), cmap='Blues')
+
+    # Labeling the axes
+    ax.set_xticks(range(len(class_names)))
+    ax.set_yticks(range(len(class_names)))
+    ax.set_xticklabels(class_names, rotation=45, ha='right')
+    ax.set_yticklabels(class_names)
+    ax.set_xlabel("Predicted")
+    ax.set_ylabel("True")
+    ax.set_title("Confusion Matrix")
+
+    # Display values in the matrix
+    for i in range(len(class_names)):
+        for j in range(len(class_names)):
+            ax.text(j, i, int(confusion_matrix[i, j]), ha='center', va='center', color='black')
+
     plt.tight_layout()
-    plt.savefig("confusion_matrix.png")
+    plt.savefig("confusion_matrix_ultralytics_style.png")
     plt.show()
