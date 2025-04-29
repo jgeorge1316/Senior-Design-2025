@@ -1,10 +1,9 @@
 # Models
 These were the models generated using my scripts. Mainly the [test_model_threaded.py](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/Test-Scripts/test_model_threaded.py)
 
-| model | Accuracy  |
-| --- | --- |
-| blah | blah |
-**UPDATE THIS TABLE**
+## Results of Best model (single_model0.3.1):
+<img src="confusion_matrix_pretty_normalized.png" alt="Confusion Matrix Results Normalized" width="500">
+<img src="confusion_matrix_pretty_raw.png" alt="Confusion Matrix Results Raw" width="500">
 
 ## [single_model0.1.1.pt](https://github.com/jgeorge1316/Senior-Design-2025/blob/main/models/single_model0.1.1.pt)
 Trained [yolo11n-cls](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-cls.pt) using 1500 for each target species, and ~220 for none. Took ~13 minutes to train 10 epochs on the Lambda AI Workstation with 10 epochs. Accuracy results on all images (at the time it was trained). Please note that the training images are included in this count, so accuracy is skewed and not really a great statistic here.
